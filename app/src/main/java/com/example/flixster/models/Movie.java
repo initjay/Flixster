@@ -28,8 +28,8 @@ public class Movie {
         return movies;
     }
 
-    public String getPosterPath() {
-        return posterPath;
+    public String getPosterPath() { // TODO: change this so that the size is not hard coded
+        return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
     }
 
     public String getTitle() {
