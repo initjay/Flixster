@@ -27,4 +27,16 @@ public class Movie {
 
         return movies;
     }
+
+    public String getPosterPath() {
+        return posterPath;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
 }
