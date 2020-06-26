@@ -65,7 +65,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView tvTitle;
-
         TextView tvOverview;
         ImageView ivPoster;
 
@@ -109,7 +108,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 // serialize the movie using parceler, use its short name as a key
                 intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
                 // show the activity
-                context. startActivity(intent);
+                context.startActivity(intent);
             }
 
         }
