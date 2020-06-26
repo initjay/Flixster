@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
     //public final String TMDB_API = this.getString(R.string.tmdb_api_key);
 
-    List<Movie> movies;
+            List<Movie> movies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,5 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onFailure");
             }
         });
+
+
     }
 }
