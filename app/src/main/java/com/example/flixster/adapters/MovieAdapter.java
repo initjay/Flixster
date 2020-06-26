@@ -19,6 +19,7 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.flixster.MovieDetailsActivity;
 import com.example.flixster.R;
+import com.example.flixster.databinding.ItemMovieBinding;
 import com.example.flixster.models.Movie;
 
 import org.parceler.Parcels;
@@ -67,30 +68,33 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
+        ItemMovieBinding binding;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTitle = itemView.findViewById(R.id.tvTitle);
-            tvOverview = itemView.findViewById(R.id.tvOverview);
-            ivPoster = itemView.findViewById(R.id.ivPoster);
+//            tvTitle = itemView.findViewById(R.id.tvTitle);
+//            tvOverview = itemView.findViewById(R.id.tvOverview);
+//            ivPoster = itemView.findViewById(R.id.ivPoster);
+            binding = ItemMovieBinding.bind(itemView);
+
             itemView.setOnClickListener(this);
         }
 
         public void bind(Movie movie) {
-            tvTitle.setText(movie.getTitle());
-            tvOverview.setText(movie.getOverview());
+            binding.tvTitle.setText(movie.getTitle());
+            binding.tvOverview.setText(movie.getOverview());
             String imageUrl;
             String placeholder;
             // check orientation of phone
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 // then imageUrl = back drop image
                 imageUrl = movie.getBackdropPath();
-                Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).apply(RequestOptions.bitmapTransform(new RoundedCorners(14))).into(ivPoster);
+                Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).apply(RequestOptions.bitmapTransform(new RoundedCorners(14))).into(binding.ivPoster);
 
             } else {
                 // else imageUrl = poster image
                 imageUrl = movie.getPosterPath();
-                Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_movie_placeholder).apply(RequestOptions.bitmapTransform(new RoundedCorners(14))).into(ivPoster);
+                Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_movie_placeholder).apply(RequestOptions.bitmapTransform(new RoundedCorners(14))).into(binding.ivPoster);
 
             }
         }
