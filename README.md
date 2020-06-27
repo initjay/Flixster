@@ -42,7 +42,7 @@ One of the biggest challenges I faces was implementing the YouTube API. It was t
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2020 James Talavera
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
