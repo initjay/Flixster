@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#ECEBEA">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -11,8 +12,8 @@
         android:layout_height="197dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -21,9 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
+        android:textStyle="bold"
         tools:text="Onward" />
 
     <TextView
@@ -34,5 +38,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
         tools:text="In a suburban fantasy world, two teenage elf brothers embark on an extraordinary quest to discover if there is still a little magic left out there." />
 </RelativeLayout>
