@@ -36,8 +36,8 @@ GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
-One of the biggest challenges I faces was implementing the YouTube API. It was tricky
- implement all the necessary functions by scratch, while also trying to trouble shoot
+One of the biggest challenges I faced was implementing the YouTube API. It was tricky
+ implementing all the necessary functions by scratch, while also trying to trouble shoot
   getting the appropriate JSON data.
 
 ## License
