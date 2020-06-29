@@ -31,7 +31,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     Movie movie;
 
     // the view objects
-    TextView tvTitle, tvOverview;
+    TextView tvTitle, tvOverview, tvPopularity;
     RatingBar rbVoteAverage;
     ImageView ivPoster;
 
@@ -97,6 +97,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
 //        tvOverview.setText(movie.getOverview());
         binding.tvTitle.setText(movie.getTitle());
         binding.tvOverview.setText(movie.getOverview());
+        binding.tvPopularity.setText("Popularity: " + movie.getPopularity());
 
         // place poster image
         String imageUrl = movie.getBackdropPath();

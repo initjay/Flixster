@@ -28,8 +28,8 @@ The following **stretch** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='Kapture 2020-06-26 at 22.36.12.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='Kapture 2020-06-26 at 22.38.02.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Kapture 2020-06-28 at 23.39.57.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Kapture 2020-06-28 at 23.41.42.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with [Kap](https://getkap.co/).
